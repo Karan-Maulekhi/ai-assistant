@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <section class="large-background">
+    <section id="section">
+    <div class="container">
+    <div class="head-nav">
+    <div id="navigation-wrapper">
+     <div id="logo-text">
+        <span class="logo">LOGO</span>
+     </div>
+     <div id="navigation">
+        <nav>
+            <a href="#"><i class="fa-solid fa-gears"></i> Features</a>
+            <a href="#"><i class="fa-solid fa-briefcase"></i> How it Works</a>
+            <a href="#"><i class="fa-solid fa-tag"></i> Pricing</a>
+            <a href="#"><i class="fa-solid fa-question"></i> FAQs</a>
+        </nav>
+     </div>
+     </div>
+     <div id="nav-btn">
+     <div nav-btn-1>
+        <button class="login-btn">Log In</button>
+     </div>
+     <div id="nav-btn-2">
+        <button class="signup-btn">Sign Up</button>
+     </div>
+     </div>
+     </div>
+     </div>
+     </section>
+     
+    <style>
+        body{
+            margin:0;
+            font-family: "Roboto", Arial;
+            padding:0;
+            position: relative;
+            background:linear-gradient(180deg, #000000 0%, #121212 100%)
+            /* background: url(https://media.tenor.com/G-wNi_OIwNUAAAAM/blue-drip.gif);
+            background-size: cover;
+            background-attachment: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            left: 0;
+            opacity:4; */
+
+        }
+        button{
+            font-weight:bolder;
+        }
+        .logo{
+            color:white;
+            font-size:28px;
+            font-weight:bolder;
+        }
+        nav a{
+            text-decoration:none;
+            color:#bababa;
+            font-size:14px;
+            margin:0px 24px;
+        }
+        .signup-btn{
+            padding:8px 20px;
+            border:none;
+            color:white;
+            border-radius:4px;
+            background:linear-gradient(45deg,rgb(236, 112, 133),rgb(223, 32, 223));
+        }
+        .login-btn{
+            padding:8px 20px;
+            background:transparent;
+            border:none;
+            color:#bababa;
+            border-radius:4px;
+        }
+        #nav-btn{
+            display:flex;
+            align-items:center;
+            gap:12px;
+        }
+        .head-nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding-block:12px;
+            backdrop-filter:blur(16px);
+            width:100%;
+        }
+        #navigation-wrapper{
+            display:flex;
+            align-items:center;
+         }
+         .container{
+            max-width:1200px;
+            margin-left:auto;
+            margin-right:auto;
+         }
+         #section{
+            position:fixed;
+            top:0;
+            right:0;
+            left:0;
+            z-index:9;
+         }
+    </style>
+    <section class="video-section">
+    <video autoplay muted class="back-video">
+    <source src="rocket.mp4">
+    </video>
+    <div class="overlay"></div>
+    <div id="head-background">
+    <div id="head">
+        <h1>Your Smartest Companion <br>
+            for a Simpler Life</h1>
+    </div>
+    <div id="para">
+        <p id="head-d-p" style="text-align:center;font-size:24px;color:rgba(255, 255, 255, 0.75);margin-top:16px;margin-bottom:0;max-width:41ch;width:100%;">Your smartest companion, simplifying life 
+                                      with personalized assistance.</p>
+    </div>
+    <div id="head-btn">
+     <div id="btn-2">
+            <input class="e-mail-bar" type="text" placeholder="Your work e-mail">
+    </div>
+    <div id="btn-1">
+        <button class="started-btn">Get Started</button>
+    </div>
+    </div>
+    <div id="learn-more">
+        <p style="color:#bababa;text-align:center;margin-top:20px;">Let's take a free demo <span style="color:white;"><u>Learn more!</u></span></p>
+    </div>
+    </div>
+    </section>
+
+
+
+    <style>
+        h1{
+            color:white;
+            font-size:56px;
+            text-align:center;
+            margin-bottom:0;
+        }
+        p{
+            color: #f2f2f2;
+            margin-bottom:28px;
+        }
+        .started-btn{
+            padding:12px 30px;
+            border:none;
+            font-size:16px;
+            border-radius:8px;
+            color:white;
+            background:linear-gradient(45deg,rgb(236, 112, 133),rgb(223, 32, 223));
+        }
+        #head-btn{
+            display:flex;
+            align-items:center;
+            gap:12px;
+            justify-content:center;
+            margin-top:48px;
+            margin-bottom:0;
+        }
+        .video-section{
+            position: relative;
+           width:100%;
+           height:100vh;
+           display:flex;
+           align-items:center;
+           justify-content:center;
+           overflow:hidden;
+        }
+        .video-section video{
+            position:absolute;
+            top:0;
+            left:0;
+            right:0;
+            width:100%;
+            height:auto;
+            background-size:cover;
+        }
+        #head-background{
+            position: relative;
+            z-index:1;
+        }
+        .e-mail-bar{
+            padding:14px;
+            width:300px;
+            border-radius:8px;
+            border:none;
+            background: rgba( 255, 255, 255, 0.25);
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.6);
+            outline:none;
+            color:white;
+        }
+        .e-mail-bar::placeholder{
+            color:#bababa;
+            font-size:16px;
+        }
+        button{
+            cursor:pointer;
+        }
+        .back-video{
+           position: relative;
+
+        }
+    </style> 
+    
+    <div style="margin:20px;" id="brain-wrapper">
+    <div id="brain-image">
+        <img id="brain-img" src="1st-brain-img.png" alt="">
+    </div>
+    <div id="brain">
+        <h2>What Can This Assistant <br>
+          Do For You?</h2>
+    </div>
+    </div>
+ 
+    <div class="container">
+    <div class="feature-container-1">
+    <div class="feature-wrapper">
+    <div class="feature-head">
+        <h3 style="color:white;text-align:center;">Task Management</h3>
+    </div>
+    <div class="feature-icon">
+        <i style="color:white;font-size:40px;" class="fa-solid fa-calendar-days"></i>
+    </div>
+    <div class="feature-para">
+        <p class="top-ka-para">Stay organized with smart remenders and
+           personalized task management. Your assistant 
+           knows what's important, so you never miss 
+           a deadline.</p>
+    </div>
+    </div>
+
+    <div class="feature-wrapper">
+    <div class="feature-head">
+        <h3 style="color:white;text-align:center;">Voice Recognition</h3>
+    </div>
+    <div class="feature-icon">
+        <i style="color:white;font-size:40px;" class="fa-solid fa-microphone"></i>
+    </div>
+    <div class="feature-para">
+        <p class="top-ka-para">Control your assistant with just your voice.
+            Speak naturally, and your assistant understands
+            and acts accordingly. Speak your commands or 
+            questions.</p>
+    </div>
+    </div>
+    </div>
+    <div class="feature-container-2">
+    <div class="feature-wrapper">
+    <div class="feature-head">
+        <h3 style="color:white;text-align:center;">Seamless Integration</h3>
+    </div>
+    <div class="feature-icon">
+        <i style="color:white;font-size:40px;" class="fa-solid fa-puzzle-piece"></i>
+    </div>
+    <div class="feature-para">
+        <p class="top-ka-para">Sync your assistiant with multiple device
+           and apps for a truly connected experience.
+           From smart home devices to email ,it all  
+           works together.</p>
+    </div>
+    </div>
+
+    <div class="feature-wrapper">
+    <div class="feature-head">
+        <h3 style="color:white;text-align:center;">Privacy and Security</h3>
+    </div>
+    <div class="feature-icon">
+    <i style="color:white;font-size:40px;" class="fa-solid fa-lock"></i>
+    </div>
+    <div class="feature-para">
+        <p class="top-ka-para">Your data is yours. With advanced
+           encryption and privacy features, your assistant 
+           ensures your personal information stay 
+           secure.</p>
+    </div>
+    </div>
+    </div> 
+    </div>
+
+    <style>
+        h2{
+            font-size:32px;
+            text-align:center;
+            color:white;
+            margin-top:16px;
+            text-shadow:rgb(238, 224, 238) 1px 0 3px;
+        }
+        .top-ka-para{
+            text-align:center;
+            max-width:42ch;
+            width:100%;
+        }
+        h3{
+            font-size:24px;
+        }
+        #brain-img{
+            width:120px;
+            text-align:center;
+        }
+        #brain-image{
+            text-align:center;
+            margin-bottom:0;
+        }
+        .feature-icon{
+            text-align:center;
+        }
+        .feature-wrapper{
+            max-width:380px;
+            width:100%;
+            background: rgba( 255, 255, 255, 0.25);
+            backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            padding:12px;
+            border-radius:16px;
+        }
+        .feature-container-1{
+            display:flex;
+            justify-content:center;
+            gap:50px;
+            margin-top:50px;
+        }
+        .feature-container-2{
+            display:flex;
+            justify-content:center;
+            gap:50px;
+            margin-top:50px;
+        }
+    </style>
+
+    <div class="container">
+    <div id="started-wrapper">
+     <div id="started-image">
+        <img id="started-img" src="started-img.png" alt="">
+     </div>
+    <div id="started">
+        <h2>Getting Started is Easy</h2>
+    </div>
+    </div>
+     <div class="steps-by-steps">
+    <div class="steps-container">
+    <div class="steps-wrapper">
+        <span style="color:white;font-size:20px;font-weight:500;">Step 1: Sign Up</span>
+        <h3 style="max-width:33ch;width:100%;">Create you account in seconds and
+            unlock the power of your personal 
+            AI assistant.</h3>
+        <p style="max-width:45ch;color:#bababa;width:100%;">Getting started with your never been easier. In just a few simple steps, you can sign up, and let your assistant handle the rest. Simplify your life effortlessly-start today!</p>
+        <button class="sign-up">Sign-Up</button>
+    </div>
+    <div class="email-input-container">
+        <div class="email-input-wrapper">
+        <div class="email-input">
+            <input class="input" type="text" name="" placeholder="Email/Phone No." id="">
+        </div>
+        <div class="email-input">
+            <input class="input" type="password" name="" placeholder="Password" id="">
+        </div>
+        <div class="email-input">
+            <input class="input" type="password" name="" placeholder="Confirm Password" id="">
+        </div>
+        <div class="signup-btn-input">
+            <button id="input-btn">Sign-Up</button>
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+     
+    <div class="steps-container-2">
+    <div id="sync-img">
+        <img style="max-width:350px;height:300px;width:100%;" src="sync-2.png" alt="">
+    </div>
+    <div class="steps-wrapper">
+        <span style="color:white;font-size:20px;font-weight:500;">Step 2: Sync Devices and Add Tasks</span>
+        <h3 style="max-width:33ch;">Connect your favorite devices, apps, and calenders to seamlessly integrate your life.</h3>
+        <p style="max-width:45ch;color:#bababa;width:100%;">Syncing your devices and adding tasks is quick and hassle-free. Whether it's your smartphone, laptop, or smart home gadgets, work seamlessly.</p>
+        <button class="sign-up">Sync-Now</button>
+    </div>
+    </div>
+
+
+    <div class="steps-container">
+    <div class="animate__animated animate__backInUp">
+    <div class="steps-wrapper">
+        <span style="color:white;font-size:20px;font-weight:500;">Step 3: Let Your Assistant Take Over</span>
+        <h3 style="max-width:33ch;width:100%;">Sit back and relex while your assistant handles the rest-tasks, reminders, and more.</h3>
+        <p style="max-width:45ch;color: #bababa;width:100%;">Once everything is set up, your assistant takes care of the rest. From managing tasks and reminders to providing smart suggestions, it works tirelessly.</p>
+        <button class="sign-up">Let's Go</button>
+    </div>
+</div>
+    <div id="sync-img">
+        <img style="max-width:350px;height:300px;width:100%;" src="robot-hd.png" alt="">
+    </div>
+    </div>
+
+    </div>
+    <style>
+        #started-img{
+            height:120px;
+        }
+        #started-image{
+            text-align:center;
+        }
+        #started-wrapper{
+            margin-top:50px;
+        }
+        h3{
+            color:white;
+        }
+        .sign-up{
+            padding:8px 20px;
+            border:none;
+            border-radius:8px;
+            color:white;
+            background:linear-gradient(45deg,rgb(236, 112, 133),rgb(223, 32, 223)); 
+        }
+        .steps-wrapper{
+           max-width:460px;
+
+        }
+        .steps-container{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            gap:48px;
+            margin-top:80px;
+        }
+        .steps-container-2{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            gap:48px;
+            margin-top:80px;
+        }
+        #input-btn{
+            width:285px;
+            color:white;
+            background:linear-gradient(45deg,rgb(236, 112, 133),rgb(223, 32, 223));  
+            padding:12px 18px;
+            border:none;
+            border-radius:8px;
+            margin-top:8px;   
+            z-index:999;
+        }
+        .input{
+            width:250px;
+            padding:12px 8px;
+            border:none;
+            border-bottom: 1px solid white;
+            margin-left:4px;
+            margin-bottom:16px;
+            outline:none;
+            background:transparent;
+            color:white;
+        }
+        .input::placeholder{
+            color:#bababa;
+        }
+        .email-input-container{
+            max-width:350px;
+            width:100%;
+            height:300px;
+            background: rgba( 255, 255, 255, 0.25);
+            backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            border-radius:20px;
+        
+        }
+
+    </style>
+    
+    <div class="container">
+    <div id="smile-image">
+        <img id="smile-img" src="smile.png" alt="">
+    </div>
+    <div id="smile-text">
+        <h2>Trusted by our users</h2>
+    </div>
+    
+    <div class="rating-container">
+    <div class="img-text-container">
+    <div class="img-text-wrapper">
+        <div class="rate">
+    <div class="img-text">
+    <div id="person-img">
+        <img style="width:50px;height:50px;border-radius:50%;" src="https://thumbs.dreamstime.com/b/portrait-young-handsome-happy-man-wearing-glasses-casual-smart-blue-clothing-yellow-color-background-square-composition-200740125.jpg" alt="">
+    </div>
+    <div id="person name">
+        <span style="font-size:16px;font-weight:bold;margin-bottom:0;color:white;">Karan Singh Rautela</span>
+    </div>
+    </div>
+    <div>
+        <span style="color:white;"><i style="color:yellow;" class="fa-solid fa-star"></i> 4.6K</span>
+    </div>
+    </div>
+    <div id="content-text">
+        <p class="bich-ka-para">This courses offered an engaging and practical 
+             approach to learning. The structured content 
+             and gudiance from experienced mentors helped
+             me develop essential skills.
+    </div>
+    </div>
+    </div>
+
+    <div class="img-text-container">
+    <div class="img-text-wrapper">
+        <div class="rate">
+    <div class="img-text">
+    <div id="person-img">
+        <img style="width:50px;height:50px;border-radius:50%;" src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvNDc5LW1rLTk2OTAtam9iNTgzLmpwZw.jpg" alt="">
+    </div>
+    <div id="person name">
+        <span style="font-size:16px;font-weight:bold;margin-bottom:0;color:white;">Sourabh Singh Negi</span>
+    </div>
+    </div>
+    <div>
+        <span style="color:white;"><i style="color:yellow;" class="fa-solid fa-star"></i> 4.9K</span>
+    </div>
+    </div>
+    <div id="content-text">
+        <p class="bich-ka-para">This courses offered an engaging and practical 
+             approach to learning. The structured content 
+             and gudiance from experienced mentors helped
+             me develop essential skills.
+    </div>
+    </div>
+    </div>
+
+    <div class="img-text-container">
+    <div class="img-text-wrapper">
+        <div class="rate">
+    <div class="img-text">
+    <div id="person-img">
+        <img style="width:50px;height:50px;border-radius:50%;" src="https://machohairstyles.com/wp-content/uploads/2017/03/haircut-for-men-with-square-faces-9.jpg" alt="">
+    </div>
+    <div id="person name">
+        <span style="font-size:16px;font-weight:bold;margin-bottom:0;color:white;">Akshat Bhandari</span>
+    </div>
+    </div>
+    <div>
+        <span style="color:white;"><i style="color:yellow;" class="fa-solid fa-star"></i> 4.8K</span>
+    </div>
+    </div>
+    <div id="content-text">
+        <p class="bich-ka-para">This courses offered an engaging and practical
+             approach to learning. The structured content 
+             and gudiance from experienced mentors helped
+             me develop essential skills.
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+    <style>
+       #smile-img{
+        height:120px;
+        width:120px;
+        margin-top:50px;
+       }
+       #smile-image{
+        text-align:center;
+       }
+       .img-text{
+        display:flex;
+        align-items:center;
+        gap:8px;
+       }
+       .rate{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+       }
+       .bich-ka-para{
+        color:white;
+        max-width:40ch;
+        width:100% !important;
+       }
+       .img-text-container{
+        padding:20px;
+        background: rgba( 255, 255, 255, 0.25);
+            backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+        max-width:340px;
+        width:100%;
+       }
+       .rating-container{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-top:50px;
+        margin-bottom:50px;
+       }
+    </style>
+    <div class="container">
+    <div id="coin-img">
+        <img id="coin-image" src="coin.png" alt="">
+        <h2>Choose Your Plan</h2>
+    </div>
+    
+    <div class="plans-containers">
+    <div class="price-container">
+    <div class="price-wrapper">
+    <div id="levels">
+        <span style="color:white;font-size:16px;">Free</span>
+    </div>
+    <div class="pricing-wrap">
+    <div id="price-no.">
+        <h3>₹0</h3>
+    </div>
+    <div>
+        <span style="color:white;font-size:14px;">/Month</span>
+    </div>
+    </div>
+    <div id="details">
+        <span style="color:white;max-width:40ch;width:100%;">Beginners or casual users who want <br> basics
+              assistance.</span> <br>
+        <span style="color:white;font-size:16px;font-weight:600;"><i style="color:white;margin-right:16px;margin-bottom:0;margin-top:24px;" class="fa-solid fa-check"></i>Basic AI features.</span> <br>
+        <span style="color:white;font-size:16px;font-weight:600;"><i style="color:white;margin-right:16px;margin-bottom:0;margin-top:8px;" class="fa-solid fa-check"></i>Access to limited knowledge base.</span> <br>
+        <span style="color:white;font-size:16px;font-weight:600;"><i style="color:white;margin-right:16px;margin-bottom:0;margin-top:8px;" class="fa-solid fa-check"></i>Standard response time.</span> <br>
+        <span style="color:white;font-size:16px;font-weight:600;"><i style="color:white;margin-right:16px;margin-bottom:0;margin-top:8px;" class="fa-solid fa-check"></i>Minimal customization options.</span> <br>
+        <span style="color:white;font-size:16px;font-weight:600;"><i style="color:white;margin-right:16px;margin-bottom:0;margin-top:8px;" class="fa-solid fa-check"></i>Free with sign-up.</span> <br>
+    </div>
+    <div>
+        <button class="price-btn">Start for free</button>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="price-container-2">
+        <div class="price-wrapper">
+        <div id="levels">
+            <span style="color:white;font-size:16px;">Advanced Plans</span>
+        </div>
+        <div class="pricing-wrap">
+        <div id="price-no.">
+            <h3>₹13,599</h3>
+        </div>
+        <div>
+            <span style="color:white;font-size:14px;">/Month</span>
+        </div>
+        </div>
+        <div id="details">
+            <span style="color:white;">Professionals or frequent users who need enhanced
+                  tailored to their workflow.</span> <br>
+            <span style="color:white;font-size:16px;font-weight:600;"><i style="color:white;margin-right:16px;margin-bottom:0;margin-top:24px;" class="fa-solid fa-check"></i>Everything in Free Plan.</span> <br>
+            <span style="color:white;font-size:16px;font-weight:600;"><i style="color:white;margin-right:16px;margin-bottom:0;margin-top:8px;" class="fa-solid fa-check"></i>Integration with poopular tools.</span> <br>
+            <span style="color:white;font-size:16px;font-weight:600;"><i style="color:white;margin-right:16px;margin-bottom:0;margin-top:8px;" class="fa-solid fa-check"></i>Faster response time.</span> <br>
+            <span style="color:white;font-size:16px;font-weight:600;"><i style="color:white;margin-right:16px;margin-bottom:0;margin-top:8px;" class="fa-solid fa-check"></i>Priority.</span> <br>
+            <span style="color:white;font-size:16px;font-weight:600;"><i style="color:white;margin-right:16px;margin-bottom:0;margin-top:8px;" class="fa-solid fa-check"></i>24/7 dedicated support.</span> <br>
+            <span style="color:white;font-size:16px;font-weight:600;"><i style="color:white;margin-right:16px;margin-bottom:0;margin-top:8px;" class="fa-solid fa-check"></i>Moderate level of custumization.</span> <br>
+            <span style="color:white;font-size:16px;font-weight:600;"><i style="color:white;margin-right:16px;margin-bottom:0;margin-top:8px;" class="fa-solid fa-check"></i>Monthly or yearly subscription.</span> <br>
+        </div>
+        <div>
+            <button class="price-btn">Upgrade to Advanced</button>
+        </div>
+        </div>
+        </div>
+
+        <div class="price-container">
+        <div class="price-wrapper">
+        <div id="levels">
+            <span style="color:white;font-size:16px;">Premium Plans</span>
+        </div>
+        <div class="pricing-wrap">
+        <div id="price-no.">
+            <h3>₹23,457</h3>
+        </div>
+        <div>
+            <span style="color:white;font-size:14px;">/Month</span>
+        </div>
+        </div>
+        <div id="details">
+            <span style="color:white;">Power users,enterprices, or teams <br> needing AI
+                  tailored to their workflow.</span> <br>
+            <span style="color:white;font-size:16px;font-weight:600;"><i style="color:white;margin-right:16px;margin-bottom:0;margin-top:24px;" class="fa-solid fa-check"></i>Everything in Advanced Plan.</span> <br>
+            <span style="color:white;font-size:16px;font-weight:600;"><i style="color:white;margin-right:16px;margin-bottom:0;margin-top:8px;" class="fa-solid fa-check"></i>AI personalization.</span> <br>
+            <span style="color:white;font-size:16px;font-weight:600;"><i style="color:white;margin-right:16px;margin-bottom:0;margin-top:8px;" class="fa-solid fa-check"></i>24/7 dedicated support.</span> <br>
+            <span style="color:white;font-size:16px;font-weight:600;"><i style="color:white;margin-right:16px;margin-bottom:0;margin-top:8px;" class="fa-solid fa-check"></i>Advanced analytics and insights.</span> <br>
+            <span style="color:white;font-size:16px;font-weight:600;"><i style="color:white;margin-right:16px;margin-bottom:0;margin-top:8px;" class="fa-solid fa-check"></i>Exclusive premiun add-ons or APIs.</span> <br>
+        </div>
+        <div>
+            <button class="price-btn">Get Premium Now</button>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+
+
+    <style>
+        #coin-img{
+            text-align:center;
+        }
+        #coin-image{
+            width:120px;
+            height:120px;
+        }
+        .pricing-wrap{
+            display:flex;
+            align-items:center;
+            gap:4px;
+            max-width:340px;
+            width:100%;
+        }
+        #details{
+           max-width:340px;
+           width:100%;
+        }
+        .price-btn{
+            max-width:340px;
+            padding:8px 0px;
+            font-size:16px;
+            border:1px solid white;
+            border-radius:4px;
+            background:transparent;
+            color:white;
+            margin-top:24px;
+            width:100%;
+        }
+        .price-container{
+            padding:20px;
+            background: rgba( 255, 255, 255, 0.25);
+            backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px );
+            border-radius:20px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            max-width:340px;
+            width:100%;
+        }
+        .price-container-2{
+            padding:20px;
+            background:linear-gradient(45deg,rgb(236, 112, 133),rgb(223, 32, 223));
+            border-radius:20px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            max-width:340px;
+            width:100%;
+        }
+        .plans-containers{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            margin-top:50px;
+            margin-bottom:50px;
+        }
+    </style>
+
+    <div class="container">
+    <div class="footer-container">
+    <div class="footer-wrapper">
+   <div class="footer-text">
+       <h4 style="color:white;">Explore</h4>
+       <p style="color:rgba(255, 255, 255, 0.7);font-size:14px;font-weight:400px;margin-bottom:0;">Home</p>
+       <p style="color:rgba(255, 255, 255, 0.7);font-size:14px;font-weight:400px;margin-bottom:0;margin-top:12px;">Features</p>
+       <p style="color:rgba(255, 255, 255, 0.7);font-size:14px;font-weight:400px;margin-bottom:0;margin-top:12px;">About Us</p>
+       <p style="color:rgba(255, 255, 255, 0.7);font-size:14px;font-weight:400px;margin-bottom:0;margin-top:12px;">Pricing</p>
+   </div>
+
+   <div class="footer-text">
+       <h4 style="color:white;">Resources</h4>
+       <p style="color:rgba(255, 255, 255, 0.7);font-size:14px;font-weight:400px;margin-bottom:0;">Blog</p>
+       <p style="color:rgba(255, 255, 255, 0.7);font-size:14px;font-weight:400px;margin-bottom:0;margin-top:12px;">Case Studies</p>
+       <p style="color:rgba(255, 255, 255, 0.7);font-size:14px;font-weight:400px;margin-bottom:0;margin-top:12px;">FAQs</p>
+       <p style="color:rgba(255, 255, 255, 0.7);font-size:14px;font-weight:400px;margin-bottom:0;margin-top:12px;">Community</p>
+   </div>
+
+   <div class="footer-text">
+       <h4 style="color:white;">Legal</h4>
+       <p style="color:rgba(255, 255, 255, 0.7);font-size:14px;font-weight:400px;margin-bottom:0;">Privacy Policy</p>
+       <p style="color:rgba(255, 255, 255, 0.7);font-size:14px;font-weight:400px;margin-bottom:0;margin-top:12px;">Terms of Services</p>
+       <p style="color:rgba(255, 255, 255, 0.7);font-size:14px;font-weight:400px;margin-bottom:0;margin-top:12px;">Cookie Policy</p>
+   </div>
+
+    <div class="news-head-container">
+    <div class="news-head-wrapper">
+    <div class="news-head">
+        <h3 style="text-align:center;">Stay Updated with AI News</h3>
+    </div>
+    <div class="news-wrapper">
+    <div id="search-btn">
+        <input id="email-search" type="search" placeholder="Enter your email address">
+    </div>
+    <div id="last-button">
+        <button id="Subscribe">Subscribe Now</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <hr style="margin-block:20px;color:#b3b0b0;">
+    <div class="para-icon-container">
+    <div class="para-icon-wrapper">
+    <div id="footer-para">
+        <p style="color:rgba(255, 255, 255, 0.7);font-size:14px;font-weight:300;text-align:center;">2025 AI Personal Assistant. All Rights Reserved</p>
+    </div>
+    <div id="footer-icons">
+        <i style="color:rgba(255, 255, 255, 0.7);font-size:24px;margin-right:12px;" class="fa-brands fa-instagram"></i> <i  style="color:rgba(255, 255, 255, 0.7);font-size:24px;margin-right:12px;" class="fa-brands fa-youtube"></i>  <i style="color:rgba(255, 255, 255, 0.7);font-size:24px;margin-right:12px;" class="fa-brands fa-x-twitter"></i> <i style="color:rgba(255, 255, 255, 0.7);font-size:24px;" class="fa-brands fa-meta"></i>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</section>
+    
+
+    <style>
+        #email-search{
+            padding:12px 16px;
+            max-width:340px;
+            width: 100%;
+            border-radius:8px;
+            border:none;
+            outline-color:black;
+        }
+        #Subscribe{
+            padding:12px 16px;
+            background:linear-gradient(45deg,rgb(236, 112, 133),rgb(223, 32, 223));
+            border-radius:8px;
+            border:none;
+            color:white;
+        }
+        .news-wrapper{
+            display:flex;
+            align-items:center;
+            gap:4px;
+        }
+        .footer-wrapper{
+            display:flex;
+            justify-content:space-between;
+
+        }
+        .footer-container{
+            margin-top:100px;
+        }
+        .para-icon-wrapper{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+        }
+        @media (max-width:1175px) {
+          .rating-container{
+            flex-direction:column;
+            gap:20px;
+          }
+          .plans-containers{
+            flex-direction:column;
+            gap:20px;
+          }
+          .footer-wrapper{
+            flex-wrap:wrap;
+          }
+        }
+        @media(max-width:900px){
+            .footer-wrapper{
+                padding-left:16px;
+            }
+            .news-head-container{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+            .steps-container{
+                flex-direction:column;
+            }
+            .steps-container-2{
+                flex-direction:column-reverse;
+            }
+        }
+        @media(max-width:860px){
+            .feature-container-1{
+                flex-direction:column;
+                align-items:center;
+            }
+            .feature-container-2{
+                flex-direction:column;
+                align-items:center;
+            }
+        }
+        @media(max-width:737px) {
+            nav{
+                display:none;
+            }
+        }
+        @media(max-width:514px){
+            #head-btn{
+                flex-wrap:wrap;
+            }
+            .steps-wrapper{
+                margin-left:16px;
+                align-items:center;
+            }
+        }
+        @media(max-width:444px){
+            .para-icon-wrapper{
+                flex-wrap:wrap;
+                align-items: center;
+                justify-content:center;
+            }
+        }
+        @media(max-width:491px){
+            .news-wrapper{
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+        }
+        @media (max-width:488px){
+            .head-background{
+                padding-top:30px;
+            }
+            .feature-wrapper{
+                box-sizing:border-box;
+            }
+            .top-ka-para{
+                max-width:38ch;
+                width:100%;
+            }
+            .img-text-container{
+                box-sizing:border-box;
+            }
+            .bich-ka-para{
+                width:35ch;
+            }
+            .price-container{
+                box-sizing:border-box;
+            }
+            }
+            @media(max-width:426px){
+                h1{
+                    padding-top:40px;
+                }
+                video{
+                    display:none;
+                }
+                .video-section{
+                    height:135vh;
+                    background:url(frame.jpg);
+                    background-position: center;
+                }
+                .overlay{
+                    position:absolute;
+                    background:rgba(0,0,0,0.3);
+                    top:0;
+                    bottom:0;
+                    left:0;
+                    right:0;
+                }
+                @media(max-width:376px){
+                    .price-container-2{
+                        box-sizing: border-box;
+                    }
+                    .price-container-2{
+                        box-sizing: border-box;
+                    }
+                    .e-mail-bar{
+                        width: 250px;
+                    }
+                }
+                @media(max-width:426px){
+                    #smile-img{
+                        height:70px;
+                        width:70px;
+                    }
+                    #started-img{
+                        height:80px;
+                    }
+                    #brain-img{
+                        width:70px;
+                        height:70px;
+                    }
+                    #coin-image{
+                        width:70px;
+                        height:70px;
+                    }
+                    .feature-container-1,.feature-container-2,#head-background {
+                        padding-inline: 16px;
+                    }
+                }
+                h1{
+                    font-size:40px;
+                }
+                #head-d-p{
+                    font-size:20px !important;
+                }
+        }
+        @media(max-width:1205px){
+            .head-nav,.footer-wrapper{
+                padding-inline: 16px;
+            }
+            #nav-btn{
+                margin-right:28px;
+            }
+        }
+
+    </style>   
+</body>
+</html>
